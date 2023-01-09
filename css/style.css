@@ -138,6 +138,7 @@ nav .media_button button.active:hover span:nth-of-type(3) {
 }
 /* banner */
 .bgimage {
+  width: 100%;
   height: 100vh;
   background-image: url(../images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
   background-size: cover;
@@ -146,19 +147,9 @@ nav .media_button button.active:hover span:nth-of-type(3) {
 .banner-title {
   font-size: 7rem;
   color: white;
-  margin-top: 100px;
-  left: 200px;
-}
-.banner-text h2 {
-  cursor: pointer;
 }
 .banner-text span {
   color: #f2cf30;
-}
-.banner-text h2:hover span {
-  color: #f2cf30;
-  text-shadow: 0 0 10px #f2cf30, 0 0 20px #f2cf30, 0 0 40px #f2cf30,
-    0 0 80px #f2cf30, 0 0 120px #f2cf30, 0 0 160px #f2cf30;
 }
 .banner-text {
   font-family: "PT Sans", sans-serif;
@@ -168,16 +159,12 @@ nav .media_button button.active:hover span:nth-of-type(3) {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.banner-text img {
-  height: 380px;
-  width: 300px;
-  border-radius: 50%;
-}
 /* akhir banner */
 
 /* bagian about */
-#about {
+.aboutimg {
   background-color: #3a3132;
+  width: auto;
 }
 h1 {
   font-size: 40px;
@@ -201,7 +188,7 @@ h1 {
 .text-about a {
   color: #f2cf30;
 }
-#about h1 {
+.aboutimg h1 {
   color: white;
 }
 /* akhir about */
@@ -352,6 +339,7 @@ input[type="submit"]:hover {
 @media screen and (max-width: 768px) {
   .container {
     margin: 0;
+    width: 100%;
   }
   nav .logo {
     margin-left: 15px;
